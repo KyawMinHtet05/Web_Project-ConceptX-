@@ -7,36 +7,67 @@
     <title>Result Summary Card</title>
 </head>
 <body>
-    <div>
-        <div>
-            <h2>Your Result</h2>
-            <div>
-                <div>76</div>
-                <div>of 100</div>
+    <div class="card">
+        <div class="result-section">
+            <h2 class="result-tile">Your Result</h2>
+            <div class="score-circle">
+                <div class="score">76</div>
+                <div class="total-score">of 100</div>
             </div>
-            <div>
+            <div class="result-text"> 
                 <h2>Great</h2>
                 <p>You scored higher than 65% of the people who have taken these tests.</p>
             </div>
         </div>
-        <div>
-            <h2>Summary</h2>
-            <ul>  
-                <li>
+        <div class="summary-section">
+            <h2 class="summary-title">Summary</h2>
+            <ul class="summary-items">  
+                <li class="reaction summary-item ">
                     <!-- Left -->
-                    <div>
+                    <div class="left-container ">
                         <!-- icon -->
+                         <img src="./assets/icons/icon-reaction.svg"/>
                          <!-- Reaction -->
-                        Reaction
+                        <span class="reaction-item-name">Reaction</span>
                     </div>
                     <!-- right -->
-                     <p> <!-- light color-->
+                     <p class="item-score"> <!-- light color-->
                         <span>80</span> <!--bold-->
                          / 100
                      </p>
+                </li>
+                <li class="memory summary-item">
+                    <div class="left-container">
+                        <img src="./assets/icons/icon-memory.svg"/>
+                        <span class="memory-item-name">Memory</span>
+                    </div>
+                    <p class="item-score">
+                        <span>92</span>
+                        / 100
+                    </p>
+                </li>
+                <li class="verbal summary-item">
+                    <div class="left-container">
+                        <img src="./assets/icons/icon-verbal.svg"/>
+                        <span class="verbal-item-name">Verbal</span>
+                    </div>
+                    <p class="item-score">
+                        <span>61</span>
+                        / 100
+                    </p>
+                </li>
+                <li class="visual summary-item">
+                    <div class="left-container">
+                        <img src="./assets/icons/icon-visual.svg"/>
+                        <span class="visual-item-name">Visual</span>
+                    </div>
+                    <p class="item-score">
+                        <span>73</span>
+                        / 100
+                    </p>
                 </li>             
             </ul>
-            <button>Continue</button>
+            <button class="continue-btn">Continue</button>
         </div>
     </div>
 </body>
