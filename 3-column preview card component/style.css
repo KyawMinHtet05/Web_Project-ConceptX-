@@ -1,0 +1,111 @@
+@font-face {
+    font-family: MyCustomFont;
+    src: url(./assets/fonts/LexendDeca-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: MyCustomFont;
+}
+
+body {
+    line-height: 1.6;
+    background-color: hsl(0, 0%, 95%);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+        
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 920px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+        
+.section {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    height: 570px;
+}
+
+.section img {
+
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin: 30px 0 25px;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+}
+        
+.section p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 85px;
+    line-height: 1.7;
+    font-size: 15px;
+    flex-grow: 1;
+}
+        
+.section button {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    margin-top: auto;
+}
+        
+.section button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+.gold {
+    background-color: hsl(31, 77%, 52%);
+}
+        
+.gold button {
+    color: hsl(31, 77%, 52%);
+}
+        
+.cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+        
+.cyan button {
+    color: hsl(184, 100%, 22%);
+}
+        
+.green {
+    background-color: hsl(179, 100%, 13%);
+}
+        
+.green button {
+    color: hsl(179, 100%, 13%);
+}
+        
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        max-width: 327px;
+    }
+            
+    .section {
+        padding: 48px;
+    }
+            
+    .section p {
+        margin-bottom: 25px;
+    }
+}
